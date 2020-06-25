@@ -122,10 +122,10 @@ task('deploy', function () {
   return src('./build/**/*', {read: false})
     .pipe(deploy({
       repository: 'https://github.com/EvandahSteadman/Evandahs_Portfolio.git',
-      branches: ['websites']
+      branch: "website"
     }))
 })
-// use default task to launch Browsersync and watch JS files
+// use default task to launch Browsersync and watch JS fil
 let build = parallel(watcher)
 task('default', build)
 task('img', img)
