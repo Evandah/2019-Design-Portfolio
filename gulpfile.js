@@ -121,7 +121,7 @@ function watcher () {
 task('deploy', function () {
   return src('./build/**/*', {read: false})
     .pipe(deploy({
-      repository: 'https://github.com/evandahs15/EvandahsPortfolio.git',
+      repository: 'https://github.com/EvandahSteadman/Evandahs_Portfolio.git',
       branches: ['website']
     }))
 })
