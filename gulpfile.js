@@ -122,7 +122,7 @@ task('deploy', function () {
   return src('./build/**/*', {read: false})
     .pipe(deploy({
       repository: 'https://github.com/EvandahSteadman/Evandahs_Portfolio.git',
-      branches: ['website']
+      branches: ['websitessss']
     }))
 })
 // use default task to launch Browsersync and watch JS files
