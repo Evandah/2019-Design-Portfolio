@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Evandah Steadman Starter Kit</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.min.css" />
+    <style></style>
+  </head>
+  <nav>
+    <div id="sidebar" class="sidebar">
+      <div class="nav-col-1">
+        <div>
+          <a href="index.html" id="anchor1" class="nav-item">
+            <h2 class="big">Home</h2>
+          </a>
+          <a href="index.html#projects" id="anchor2" class="nav-item">
+            <h2 class="big">My Work</h2>
+          </a>
+          <a href="index.html#about-me" id="anchor3" class="nav-item">
+            <h2 class="big">About Me</h2>
+          </a>
+          <a href="index.html#contact-section" id="anchor4" class="nav-item">
+            <h2 class="big">Contact</h2>
+          </a>
+        </div>
+        <div id="contact">
+          <ul>
+            <li>021 244 2234</li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/evandah-steadman-810a3ab3/"
+                class=""
+                >Linkden</a
+              >
+              //
+              <a href="https://www.behance.net/vandahs8361" class="">Behance</a>
+            </li>
+            <li>Evandahs@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+      <div id="side-menu-button" class="close-nav">
+        <a href="javascript:void(0);" onclick="showNav()">
+          <div id="side-nav-toggle">
+            <div class="rectangle-side"></div>
+            <div class="rectangle-side"></div>
+            <div class="rectangle-side"></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <a href="javascript:void(0);" onclick="toggleNav()">
+    <div id="top-nav-toggle">
+      <div id="Rectangle-1" class="rectangle-top"></div>
+      <div id="Rectangle-2" class="rectangle-top"></div>
+      <div id="Rectangle-3" class="rectangle-top"></div>
+    </div>
+  </a>
+  <div id="project-wrapper">
+    <div id="scrollbarWrapper">
+      <div id="scrollbar">
+        <div id="scrollStyle">
+          <p class="name">
+            evandah
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="content">
+      <div id="primary">
+        <section id="header">
+          <div id="title">
+            <h1 class="huge">AMI business insurance</h1>
+          </div>
+        </section>
+        <article class="project-description">
+          <a name="top" id="top"></a>
+          <h1 class="bigger" id="about-project">The Challenge</h1>
+          <div class="about-project-container">
+            <div class="project-summary">
+              <p class="medium">
+                Contracted to AMI to help progress the user expereince for a
+                customer looking for a quote to cover thier business. The
+                challenge was to help develope a better user expereince with
+                a focus on "quick wins" and provide evidence to gain buy-in
+                from stakeholders.
+              </p>
+            </div>
+
+            <div class="proccess">
+              <p class="">The process</p>
+              <ul>
+                <li>Animation</li>
+                <li>UX design</li>
+                <li>High fidelity code prototypes</li>
+                <li>User testing</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-body">
+            <h1 class="big">Increasing conversion</h1>
+            <p class="small">
+              The page load times with AMI business insurance portal could be
+              upto 7s long. This problem was impacting the conversion rate, but
+              refactoring the software architecture to increase performance
+              would be an expensive scope of work.
+            </p>
+            <img
+              id="image-1"
+              src="assets/img/Customer_expectations_and_site_performance_e8477033-3255-455a-8933-ae77c3dcdd4e.png"
+              alt="photo-1"
+            />
+          </div>
+          <div class="project-body">
+            <h1 class="big">Disguising slow loading times</h1>
+            <p class="small">
+              The original pre-loader animation had no indication when it would
+              be completed. To provide a quick fix I looked into a range of
+              pre-loader animations including determinate pre-loaders, and
+              skeleton pre-loaders. I gathered data to support this UX decisions
+              and get stakeholder buy-in, then designed a new animation.
+            </p>
+            <div class="project-body">
+              <video width="100%" height="auto" controls autoplay loop>
+                <source src="assets/img/IAG-animation.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          <div class="project-body">
+            <h1 class="big">Intimidating insurance forms</h1>
+            <p class="small">
+              There can be over 30 questions to answer to get a quote to insure
+              your business. With no ability to remove questions, and a focus on
+              “quick wins” the challenge was to create a more pleasing
+              experience without redesigning the entire layout.<br /><br />
+              We created an accordion layout that awarded users with “ticks” as
+              they progressed.
+            </p>
+            <img src="assets/img/BA.png" alt="photo-1" />
+          </div>
+          <div class="project-body">
+            <h1 class="big">Exploring the accordions could cause errors</h1>
+            <p class="small">
+              If a user opens the accordions to explore, then closes the
+              accordion without touching a question the system would recognise
+              it as incomplete and return red errors for each question
+              untouched. The challenge was to align the system behaviour with
+              customers explorative mindset vs task-based mindset.
+            </p>
+            <img src="assets/img/Error-states.png" alt="photo-1" />
+          </div>
+          <div class="project-body">
+            <h1 class="big">Usability testing for system behaviour</h1>
+            <p class="small">
+              To align the system behaviour with customers explorative mindset
+              vs task-based mindset, we had to understand if there were any
+              events or clicks we could track, as a user moves from exploring to
+              completing the task. <br />
+              <br />To facilitate this usability testing I created a code based
+              prototype with FramerX and programmed error states into the
+              prototype. We then ran a number of participants through the a
+              range of tasks to understand their behaviour during an explorative
+              mindset vs task based. This test proved positive with a number of
+              changes to the systems error handling.
+            </p>
+            <img src="assets/img/design+code.png" alt="photo-1" />
+          </div>
+          <div class="project-body">
+            <h1 class="big">Usability test goals</h1>
+            <img src="assets/img/User-testing.png" alt="photo-1" />
+          </div>
+          <div class="other-projects-container">
+            <div id="next-project" class="left">
+              <h1 class="small">previous project</h1>
+              <a href="Backup-plan.html">
+                <p>Safety for surfers</p>
+              </a>
+            </div>
+            <div id="next-project" class="right">
+              <h1 class="small">next project</h1>
+              <a href="Kerry_Topp_Collective.html">
+                <p>The Kerry Topp Collective</p>
+              </a>
+            </div>
+          </div>
+          <footer id="footer">
+            <p class="small">021 244 2234</p>
+            <p class="small">Evandahs@gmail.com</p>
+            <p>
+              <a
+                href="https://www.linkedin.com/in/evandah-steadman-810a3ab3/"
+                class="small"
+                >Linkden</a
+              >
+              //
+              <a href="https://www.behance.net/vandahs8361" class="small"
+                >Behance</a
+              >
+            </p>
+            <div id="back-to-top">
+              <a href="#top" class="small">Back To Top</a>
+            </div>
+          </footer>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <body>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
